@@ -198,7 +198,7 @@ jobs:
 
           echo "Copying Image.lz4 and concatenating DTB files..."
           cp ./out/arch/arm64/boot/Image.lz4 ../AnyKernel3/Image.lz4
-          if [ "${{ inputs.codename }}" == "gs201" ]; then
+          if [ "${{ inputs.codename }}" == "gki" ]; then
             cat ./out/google-devices/gs201/dts/*.dtb > ../AnyKernel3/dtb
             #cp ./out/google-devices/gs201/dts/dtbo.img ../AnyKernel3/dtbo.img
           fi
